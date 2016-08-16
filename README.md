@@ -20,7 +20,7 @@ drupal create:terms
 /separate_tax
 ```
 
-![Taxonomies by vocabulary](./taxonomiesbyvocabulary.png "Taxonomies by vocabulary")
+![Taxonomies by vocabulary](./resources/taxonomiesbyvocabulary.png "Taxonomies by vocabulary")
 
 
 For Drupal 7, this script can be work fine.
