@@ -2,18 +2,19 @@
 
 /**
  * @file
- * Contains edatawordl_test.module..
+ * Contains tax_by_vocabulary.module..
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Component\Utility\Html;
 
 /**
  * Implements hook_help().
  */
-function edatawordl_test_help($route_name, RouteMatchInterface $route_match) {
+function tax_by_vocabulary_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
-    // Main module help for the edatawordl_test module.
-    case 'help.page.edatawordl_test':
+    // Main module help for the tax_by_vocabulary module.
+    case 'help.page.tax_by_vocabulary':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
       $output .= '<p>' . t('My Awesome Module') . '</p>';
@@ -26,7 +27,7 @@ function edatawordl_test_help($route_name, RouteMatchInterface $route_match) {
 /**
  * Implements hook_theme().
  */
-function edataworld_test_theme($existing, $type, $theme, $path) {
+function tax_by_vocabulary_theme($existing, $type, $theme, $path) {
 
   return [
       'taxbyvocabulary' => [
@@ -42,8 +43,8 @@ function edataworld_test_theme($existing, $type, $theme, $path) {
 }
 
 /**
- * Implements hook_theme_suggestions_edataworld_test().
+ * Implements hook_theme_suggestions_taxbyvocabulary().
  */
-function edataworld_test_theme_suggestions_taxbyvocabulary($variables) {
+function tax_by_vocabulary_theme_suggestions_taxbyvocabulary($variables) {
   return 'taxbyvocabulary__' . Html::cleanCssIdentifier($variables['name']);
 }

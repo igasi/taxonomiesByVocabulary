@@ -1,7 +1,14 @@
 <ul class="grid-tax-by-voc">
     {% for item in items %}
         <li class="{{ item.classes }}">
-            <div>{{ item.content | raw }}</div>
+            <div><strong>{{ item.name }}</strong> ({{ item.id }})</div>
+            <ul>
+                {% for term in item.terms %}
+                    <li>
+                        <a href="/taxonomy/term/{{ term.id }}"> <strong> {{ term.name }} </strong> ({{ term.id }})</a>
+                    </li>
+                {% endfor %}
+            </ul>
         </li>
     {% endfor %}
 </ul>

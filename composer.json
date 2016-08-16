@@ -1,14 +1,14 @@
 {
-  "name": "drupal/edatawordl_test",
+  "name": "drupal/tax_by_vocabulary",
   "type": "drupal-module",
   "description": "My Awesome Module",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
-  "homepage": "https://www.drupal.org/project/edatawordl_test",
+  "homepage": "https://www.drupal.org/project/tax_by_vocabulary",
   "minimum-stability": "dev",
   "support": {
-    "issues": "https://www.drupal.org/project/issues/edatawordl_test",
-    "source": "http://cgit.drupalcode.org/edatawordl_test"
+    "issues": "https://www.drupal.org/project/issues/tax_by_vocabulary",
+    "source": "http://cgit.drupalcode.org/tax_by_vocabulary"
   },
   "require": { }
 }

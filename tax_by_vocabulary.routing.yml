@@ -1,0 +1,8 @@
+
+tax_by_vocabulary.tax_by_vocabulary_SeparateTax:
+  path: '/separate_tax'
+  defaults:
+    _controller: '\Drupal\tax_by_vocabulary\Controller\TaxByVocabulary::SeparateTax'
+    _title: 'Separate Taxomonies Terms by Vocabulary'
+  requirements:
+    _permission: 'access content'
