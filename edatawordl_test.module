@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @file
+ * Contains edatawordl_test.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function edatawordl_test_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the edatawordl_test module.
+    case 'help.page.edatawordl_test':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function edataworld_test_theme($existing, $type, $theme, $path) {
+
+  return [
+      'taxbyvocabulary' => [
+          'variables' => [
+              'name' => '',
+              'attributes' => [],
+              'count_items' => 0,
+              'items' => [],
+          ],
+      ],
+  ];
+
+}
+
+/**
+ * Implements hook_theme_suggestions_edataworld_test().
+ */
+function edataworld_test_theme_suggestions_taxbyvocabulary($variables) {
+  return 'taxbyvocabulary__' . Html::cleanCssIdentifier($variables['name']);
+}

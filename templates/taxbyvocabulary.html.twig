@@ -1,0 +1,7 @@
+<ul class="grid-tax-by-voc">
+    {% for item in items %}
+        <li class="{{ item.classes }}">
+            <div>{{ item.content | raw }}</div>
+        </li>
+    {% endfor %}
+</ul>

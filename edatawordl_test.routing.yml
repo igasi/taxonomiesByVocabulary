@@ -1,0 +1,8 @@
+
+edatawordl_test.tax_by_vocabulary_SeparateTax:
+  path: '/separate_tax'
+  defaults:
+    _controller: '\Drupal\edatawordl_test\Controller\TaxByVocabulary::SeparateTax'
+    _title: 'SeparateTaxbyVoc'
+  requirements:
+    _permission: 'access content'
